@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/linLayHead"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/wp_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/linLayHead"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtxtUID"
+                style="@android:style/Widget.Holo.Light.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_uid"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textColorHint="@color/colorHint"
+                android:backgroundTint="@color/colorTxt"
+                android:textColor="@color/colorTxt" />
+
+            <EditText
+                android:id="@+id/edtxtPwd"
+                style="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/hint_pwd"
+                android:textColorHint="@color/colorHint"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorTxt"
+                android:textColor="@color/colorTxt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spinHttp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtxtServer"
+                    style="@android:style/Widget.Holo.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.90"
+                    android:backgroundTint="@color/colorTxt"
+                    android:ems="10"
+                    android:hint="@string/hint_server"
+                    android:inputType="textMultiLine|textEmailAddress"
+                    android:text="ge.smartlab.com/workplace"
+                    android:textColor="@color/colorTxt" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chkActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:checked="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="@color/colorTxt"
+                android:text="Default"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorBtn"
+                android:text="SAVE"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textColor="@color/colorTxt"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:text="Powered By :"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorTxt"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/wp_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

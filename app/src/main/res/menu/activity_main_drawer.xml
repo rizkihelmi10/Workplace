@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Dashboard" />
+        <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_news"
+        android:title="News" />
+        <item
+            android:id="@+id/nav_newsoffline"
+            android:visible="false"
+            android:icon="@drawable/ic_news"
+            android:title="News(Offline)" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_viewnewsoffline"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="View Created News(Offline)" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_cloud_queue_black_24dp"
+            android:title="Web Portal" />
+        <item
+        android:id="@+id/nav_slideshow"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Calendar" />
+        <item
+        android:id="@+id/workplace"
+        android:icon="@drawable/ic_assignment_ind_black_24dp"
+        android:title="Workplace" />
+        <item
+            android:id="@+id/shortcut"
+            android:icon="@drawable/ic_assistant_black_24dp"
+            android:title="Shortcut" />
+        <item
+            android:id="@+id/fm"
+            android:icon="@drawable/ic_folder_shared_black_24dp"
+            android:title="File Manager" />
+        <item
+            android:id="@+id/Analytics"
+            android:icon="@drawable/ic_pie_analytics"
+            android:title="Analytics" />
+        <item
+            android:id="@+id/job"
+            android:icon="@drawable/ic_news"
+            android:visible="false"
+            android:title="CEF Job Mgmt" />
+        <item
+            android:id="@+id/config"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Configuration" />
+        <item
+        android:id="@+id/attendance"
+        android:icon="@drawable/ic_baseline_fingerprint_24px"
+        android:title="Remote Attendance" />
+
+        <item
+            android:id="@+id/geofence"
+            android:visible="false"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="[BETAv5] Geofencing" />
+
+        <item
+            android:id="@+id/scanqr"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Scan QR" />
+
+        <item
+            android:id="@+id/empty"
+            android:title="" />
+    </group>
+
+</menu>

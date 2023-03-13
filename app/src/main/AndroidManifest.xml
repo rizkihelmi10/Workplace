@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartlab.wpslidingmenu">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:node="remove"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <!--uses-permission android:name="android.permission.VIBRATE"/-->
+    <!-- HTC -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--uses-permission android:name="android.permission.WAKE_LOCK" /-->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+
+
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground_logowp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground_logowp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:exported="false"
+        android:usesCleartextTraffic="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Config"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+        android:name=".DomainList"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+        android:windowSoftInputMode="stateHidden" />
+        <activity
+        android:name=".categories2"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+        android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AddNewswithdb"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ViewInserted"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".serverlist"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".dbList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ViewTwo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain" />
+
+        <activity
+            android:name=".viewAtt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".geoFenceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".CaptureActivityPortrait"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".QRScanner"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ScanFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".WebViewFragment2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".WebViewFragmentii"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDomain"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBJAJE6NPTUWSh36B_-krz4QkGe2oHlhTE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/wpicon" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".frmTakePhoto"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".LocationManagement"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".InitLocationManagement"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".LocationUserRegister"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".LocationRequestkey"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".IncomingCall"
+            android:theme="@style/AppDomain"
+            android:label="@string/app_name" />
+
+        <service android:name=".GeofenceTrasitionService"
+            android:exported="false"/>
+
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".frmTakePhoto$MyBroadcastReceiver"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"
+                    android:exported="false">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".testMap"
+            android:label="@string/title_activity_test_map"></activity>
+
+    </application>
+
+</manifest>
